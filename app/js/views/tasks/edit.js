@@ -17,6 +17,8 @@ define(['text!templates/tasks/edit.html'], function(template) {
 
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
+      $(this.$el.find('#due_date')).pickadate();
+      $(this.$el.find('#due_time')).pickatime();
       return this;
     },
 

@@ -1,4 +1,4 @@
-define(['config'], function(config) {
+define(['api-config'], function(config) {
   var app;
 
   function ApiManager(_app) {
